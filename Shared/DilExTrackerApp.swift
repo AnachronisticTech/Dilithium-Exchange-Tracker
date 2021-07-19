@@ -13,8 +13,12 @@ struct DilExTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
+            #if os(iOS)
+            DataView()
+            #else
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            #endif
         }
     }
 }

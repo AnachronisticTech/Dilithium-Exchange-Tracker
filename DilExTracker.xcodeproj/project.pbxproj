@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,28 @@
 		914E6258268617F30093F8E0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E623F268617F00093F8E0 /* Persistence.swift */; };
 		914E6259268617F30093F8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914E6240268617F30093F8E0 /* Assets.xcassets */; };
 		914E625A268617F30093F8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914E6240268617F30093F8E0 /* Assets.xcassets */; };
+		914E6267268627230093F8E0 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E6266268627230093F8E0 /* DataView.swift */; };
+		914E626A268628CD0093F8E0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 914E6269268628CD0093F8E0 /* OrderedCollections */; };
+		916A20B526A420BA004AD69F /* DilExManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A20B426A420BA004AD69F /* DilExManager.swift */; };
+		916A20B626A420BB004AD69F /* DilExManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A20B426A420BA004AD69F /* DilExManager.swift */; };
+		91A3DEB52687C3F400D88C7C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 91A3DEB42687C3F400D88C7C /* Charts */; };
+		91A3DEB72687C5A700D88C7C /* LineChartSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3DEB62687C5A700D88C7C /* LineChartSwiftUIView.swift */; };
+		91F8ED2F26A60CB7003F1A96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8ED2E26A60CB7003F1A96 /* Constants.swift */; };
+		91F8ED3026A60CB7003F1A96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8ED2E26A60CB7003F1A96 /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91B50224268B1F48007BD3F6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		914E623C268617F00093F8E0 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -30,6 +51,12 @@
 		914E624D268617F30093F8E0 /* DilExTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DilExTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914E624F268617F30093F8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914E6250268617F30093F8E0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		914E6266268627230093F8E0 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		916A20B426A420BA004AD69F /* DilExManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilExManager.swift; sourceTree = "<group>"; };
+		91A3DEB62687C5A700D88C7C /* LineChartSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartSwiftUIView.swift; sourceTree = "<group>"; };
+		91B50214268B1F44007BD3F6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		91B50216268B1F44007BD3F6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		91F8ED2E26A60CB7003F1A96 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914E626A268628CD0093F8E0 /* OrderedCollections in Frameworks */,
+				91A3DEB52687C3F400D88C7C /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +85,7 @@
 				914E623A268617F00093F8E0 /* Shared */,
 				914E6247268617F30093F8E0 /* iOS */,
 				914E624E268617F30093F8E0 /* macOS */,
+				91B50213268B1F44007BD3F6 /* Frameworks */,
 				914E6246268617F30093F8E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				914E623D268617F00093F8E0 /* DilExTrackerApp.swift */,
+				916A20B426A420BA004AD69F /* DilExManager.swift */,
+				91F8ED2E26A60CB7003F1A96 /* Constants.swift */,
 				914E623E268617F00093F8E0 /* ContentView.swift */,
 				914E623F268617F00093F8E0 /* Persistence.swift */,
 				914E6240268617F30093F8E0 /* Assets.xcassets */,
@@ -84,6 +116,8 @@
 		914E6247268617F30093F8E0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				914E6266268627230093F8E0 /* DataView.swift */,
+				91A3DEB62687C5A700D88C7C /* LineChartSwiftUIView.swift */,
 				914E6248268617F30093F8E0 /* Info.plist */,
 			);
 			path = iOS;
@@ -98,6 +132,15 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		91B50213268B1F44007BD3F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91B50214268B1F44007BD3F6 /* WidgetKit.framework */,
+				91B50216268B1F44007BD3F6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,12 +151,17 @@
 				914E6241268617F30093F8E0 /* Sources */,
 				914E6242268617F30093F8E0 /* Frameworks */,
 				914E6243268617F30093F8E0 /* Resources */,
+				91B50224268B1F48007BD3F6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "DilExTracker (iOS)";
+			packageProductDependencies = (
+				914E6269268628CD0093F8E0 /* OrderedCollections */,
+				91A3DEB42687C3F400D88C7C /* Charts */,
+			);
 			productName = "DilExTracker (iOS)";
 			productReference = 914E6245268617F30093F8E0 /* DilExTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +209,10 @@
 				Base,
 			);
 			mainGroup = 914E6235268617F00093F8E0;
+			packageReferences = (
+				914E6268268628CD0093F8E0 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				91A3DEB32687C3F400D88C7C /* XCRemoteSwiftPackageReference "charts" */,
+			);
 			productRefGroup = 914E6246268617F30093F8E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,10 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914E6267268627230093F8E0 /* DataView.swift in Sources */,
 				914E6251268617F30093F8E0 /* DilExTracker.xcdatamodeld in Sources */,
+				91A3DEB72687C5A700D88C7C /* LineChartSwiftUIView.swift in Sources */,
+				916A20B526A420BA004AD69F /* DilExManager.swift in Sources */,
 				914E6257268617F30093F8E0 /* Persistence.swift in Sources */,
 				914E6253268617F30093F8E0 /* DilExTrackerApp.swift in Sources */,
 				914E6255268617F30093F8E0 /* ContentView.swift in Sources */,
+				91F8ED2F26A60CB7003F1A96 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				914E6252268617F30093F8E0 /* DilExTracker.xcdatamodeld in Sources */,
+				916A20B626A420BB004AD69F /* DilExManager.swift in Sources */,
 				914E6258268617F30093F8E0 /* Persistence.swift in Sources */,
 				914E6254268617F30093F8E0 /* DilExTrackerApp.swift in Sources */,
 				914E6256268617F30093F8E0 /* ContentView.swift in Sources */,
+				91F8ED3026A60CB7003F1A96 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +388,7 @@
 		914E625E268617F30093F8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -352,6 +411,7 @@
 		914E625F268617F30093F8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SDPTWQFVDC;
@@ -402,6 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SDPTWQFVDC;
@@ -451,6 +513,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		914E6268268628CD0093F8E0 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		91A3DEB32687C3F400D88C7C /* XCRemoteSwiftPackageReference "charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		914E6269268628CD0093F8E0 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 914E6268268628CD0093F8E0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		91A3DEB42687C3F400D88C7C /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A3DEB32687C3F400D88C7C /* XCRemoteSwiftPackageReference "charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		914E623B268617F00093F8E0 /* DilExTracker.xcdatamodeld */ = {
