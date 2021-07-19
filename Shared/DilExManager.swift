@@ -153,10 +153,6 @@ class DilExManager: ObservableObject {
                 semaphore.signal()
             }
             .resume()
-//        URLSession.shared
-//            .dataTaskPublisher(for: url)
-//            .receive(on: DispatchQueue.main)
-//            .sink(receiveCompletion: <#T##((Subscribers.Completion<URLSession.DataTaskPublisher.Failure>) -> Void)##((Subscribers.Completion<URLSession.DataTaskPublisher.Failure>) -> Void)##(Subscribers.Completion<URLSession.DataTaskPublisher.Failure>) -> Void#>, receiveValue: <#T##((URLSession.DataTaskPublisher.Output) -> Void)##((URLSession.DataTaskPublisher.Output) -> Void)##(URLSession.DataTaskPublisher.Output) -> Void#>)
         semaphore.wait()
         completionHandler()
     }
