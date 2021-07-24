@@ -1,17 +1,17 @@
 //
 //  LineChartSwiftUIView.swift
-//  DilExTracker (iOS)
+//  DilExTracker (macOS)
 //
-//  Created by Daniel Marriner on 26/06/2021.
+//  Created by Daniel Marriner on 24/07/2021.
 //
 
 import SwiftUI
 import Charts
 
-struct LineChartSwiftUIView: UIViewRepresentable {
+struct LineChartSwiftUIView: NSViewRepresentable {
     let data: [(Date, Int)]
 
-    func makeUIView(context: Context) -> LineChartView {
+    func makeNSView(context: Context) -> LineChartView {
         let chart = LineChartView()
         chart.scaleYEnabled = false
         let dataSet = generateDataSet()
@@ -20,14 +20,14 @@ struct LineChartSwiftUIView: UIViewRepresentable {
         return chart
     }
 
-    func updateUIView(_ uiView: LineChartView, context: Context) {
+    func updateNSView(_ nsView: LineChartView, context: Context) {
         let dataSet = generateDataSet()
-        uiView.data = LineChartData(dataSet: dataSet)
-        uiView.xAxis.valueFormatter = ChartFormatter(with: dataSet)
+        nsView.data = LineChartData(dataSet: dataSet)
+        nsView.xAxis.valueFormatter = ChartFormatter(with: dataSet)
     }
 }
 
-struct LineChartSwiftUIView_Preview: PreviewProvider {
+struct LineChartSwiftUIView_Previews: PreviewProvider {
     static let formatter : DateFormatter = {
         let df = DateFormatter()
         df.locale = Locale(identifier: "en_US_POSIX")

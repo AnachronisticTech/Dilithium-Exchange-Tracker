@@ -21,6 +21,12 @@
 		914E626A268628CD0093F8E0 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 914E6269268628CD0093F8E0 /* OrderedCollections */; };
 		916A20B526A420BA004AD69F /* DilExManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A20B426A420BA004AD69F /* DilExManager.swift */; };
 		916A20B626A420BB004AD69F /* DilExManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A20B426A420BA004AD69F /* DilExManager.swift */; };
+		9184EE3D26AC508F00034990 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184EE3C26AC508F00034990 /* DataView.swift */; };
+		9184EE3F26AC515700034990 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 9184EE3E26AC515700034990 /* OrderedCollections */; };
+		9184EE4126AC515700034990 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 9184EE4026AC515700034990 /* Charts */; };
+		9184EE4326AC536D00034990 /* LineChartSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184EE4226AC536D00034990 /* LineChartSwiftUIView.swift */; };
+		9184EE4526AC549600034990 /* LineChartExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184EE4426AC549600034990 /* LineChartExtensions.swift */; };
+		9184EE4626AC549600034990 /* LineChartExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184EE4426AC549600034990 /* LineChartExtensions.swift */; };
 		91A3DEB52687C3F400D88C7C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 91A3DEB42687C3F400D88C7C /* Charts */; };
 		91A3DEB72687C5A700D88C7C /* LineChartSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3DEB62687C5A700D88C7C /* LineChartSwiftUIView.swift */; };
 		91F8ED2F26A60CB7003F1A96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8ED2E26A60CB7003F1A96 /* Constants.swift */; };
@@ -53,6 +59,9 @@
 		914E6250268617F30093F8E0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		914E6266268627230093F8E0 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		916A20B426A420BA004AD69F /* DilExManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilExManager.swift; sourceTree = "<group>"; };
+		9184EE3C26AC508F00034990 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		9184EE4226AC536D00034990 /* LineChartSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartSwiftUIView.swift; sourceTree = "<group>"; };
+		9184EE4426AC549600034990 /* LineChartExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartExtensions.swift; sourceTree = "<group>"; };
 		91A3DEB62687C5A700D88C7C /* LineChartSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartSwiftUIView.swift; sourceTree = "<group>"; };
 		91B50214268B1F44007BD3F6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		91B50216268B1F44007BD3F6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -73,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9184EE3F26AC515700034990 /* OrderedCollections in Frameworks */,
+				9184EE4126AC515700034990 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +107,7 @@
 				914E623D268617F00093F8E0 /* DilExTrackerApp.swift */,
 				916A20B426A420BA004AD69F /* DilExManager.swift */,
 				91F8ED2E26A60CB7003F1A96 /* Constants.swift */,
+				9184EE4426AC549600034990 /* LineChartExtensions.swift */,
 				914E623E268617F00093F8E0 /* ContentView.swift */,
 				914E623F268617F00093F8E0 /* Persistence.swift */,
 				914E6240268617F30093F8E0 /* Assets.xcassets */,
@@ -126,6 +138,8 @@
 		914E624E268617F30093F8E0 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				9184EE3C26AC508F00034990 /* DataView.swift */,
+				9184EE4226AC536D00034990 /* LineChartSwiftUIView.swift */,
 				914E624F268617F30093F8E0 /* Info.plist */,
 				914E6250268617F30093F8E0 /* macOS.entitlements */,
 			);
@@ -179,6 +193,10 @@
 			dependencies = (
 			);
 			name = "DilExTracker (macOS)";
+			packageProductDependencies = (
+				9184EE3E26AC515700034990 /* OrderedCollections */,
+				9184EE4026AC515700034990 /* Charts */,
+			);
 			productName = "DilExTracker (macOS)";
 			productReference = 914E624D268617F30093F8E0 /* DilExTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9184EE4526AC549600034990 /* LineChartExtensions.swift in Sources */,
 				914E6267268627230093F8E0 /* DataView.swift in Sources */,
 				914E6251268617F30093F8E0 /* DilExTracker.xcdatamodeld in Sources */,
 				91A3DEB72687C5A700D88C7C /* LineChartSwiftUIView.swift in Sources */,
@@ -262,10 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9184EE4626AC549600034990 /* LineChartExtensions.swift in Sources */,
 				914E6252268617F30093F8E0 /* DilExTracker.xcdatamodeld in Sources */,
 				916A20B626A420BB004AD69F /* DilExManager.swift in Sources */,
 				914E6258268617F30093F8E0 /* Persistence.swift in Sources */,
+				9184EE3D26AC508F00034990 /* DataView.swift in Sources */,
 				914E6254268617F30093F8E0 /* DilExTrackerApp.swift in Sources */,
+				9184EE4326AC536D00034990 /* LineChartSwiftUIView.swift in Sources */,
 				914E6256268617F30093F8E0 /* ContentView.swift in Sources */,
 				91F8ED3026A60CB7003F1A96 /* Constants.swift in Sources */,
 			);
@@ -538,6 +560,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 914E6268268628CD0093F8E0 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		9184EE3E26AC515700034990 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 914E6268268628CD0093F8E0 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		9184EE4026AC515700034990 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A3DEB32687C3F400D88C7C /* XCRemoteSwiftPackageReference "charts" */;
+			productName = Charts;
 		};
 		91A3DEB42687C3F400D88C7C /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
