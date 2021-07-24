@@ -100,6 +100,7 @@ class DilExManager: ObservableObject {
     }
 
     func fetchData() {
+        data = [:]
         let semaphore = DispatchSemaphore(value: 2)
 
         let post2019Url = URL(string: """
@@ -127,7 +128,6 @@ class DilExManager: ObservableObject {
         }
 
         semaphore.wait()
-        print(data.keys.sorted())
     }
 
     private func fetchData<T>(
